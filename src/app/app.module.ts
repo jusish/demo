@@ -7,6 +7,7 @@ import { TextcomponentComponent } from './textcomponent/textcomponent.component'
 import { ImagecomponentComponent } from './imagecomponent/imagecomponent.component';
 import { EmpInfoComponent } from './emp-info/emp-info.component';
 import { FormComponentComponent } from './form-component/form-component.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,10 +18,12 @@ import { FormComponentComponent } from './form-component/form-component.componen
     FormComponentComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

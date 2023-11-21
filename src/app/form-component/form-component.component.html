@@ -1,1 +1,60 @@
 <p>form-component works!</p>
+
+<div class="container">
+  <h1>User registration</h1>
+  <form class="form-group" (ngSubmit)="submit()">
+    <div>
+      <label for="firstname">First Name</label>
+      <input
+        type="text"
+        name="firstname"
+        class="form-control"
+        ngModel
+        autocomplete="Justin"
+        id="firstname"
+      />
+    </div>
+    <pre></pre>
+
+    <div>
+      <label for="lastname">Last Name</label>
+      <input
+        type="text"
+        name="lastname"
+        class="form-control"
+        ngModel
+        autocomplete="Justin"
+        id="lastname"
+      />
+    </div>
+    <pre></pre>
+
+    <div>
+      <label for="email">email</label>
+      <input
+        type="text"
+        name="email"
+        class="form-control"
+        ngModel
+        autocomplete="Justin"
+        id="email"
+      />
+    </div>
+    <pre></pre>
+
+    <div>
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        class="form-control"
+        ngModel
+        autocomplete="Justin"
+        id="password"
+      />
+    </div>
+    <pre></pre>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
