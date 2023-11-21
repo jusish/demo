@@ -2,7 +2,7 @@
 
 <div class="container">
   <h1>User registration</h1>
-  <form class="form-group" (ngSubmit)="submit()">
+  <form class="form-group" #login = "ngForm" (ngSubmit)="submit(login)">
     <div>
       <label for="firstname">First Name</label>
       <input
@@ -12,7 +12,12 @@
         ngModel
         autocomplete="Justin"
         id="firstname"
+        required
+        minlength="2"
+        maxlength="10"
+        #name = "ngModel"
       />
+      <div *ngIf=" name.touched && name.invalid" class="alert alert"></div>
     </div>
     <pre></pre>
 

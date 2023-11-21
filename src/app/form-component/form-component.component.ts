@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 })
 export class FormComponentComponent {
 
-  submit() {
-    console.log("Form submitted");
+
+  submit(login: any) {
+    console.log("Form submitted", login);
   }
 }
