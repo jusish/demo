@@ -16,10 +16,14 @@ export class EmpInfoComponent {
     this.infoReceived1 = this.rservice.getinfo1();
   }
   getInfoFromServiceClass2() {
-    this.infoReceived1 = this.rservice.getinfo2();
+    this.infoReceived2 = this.rservice.getinfo2();
   }
   getInfoFromServiceClass3() {
-    this.infoReceived1 = this.rservice.getinfo3();
+    this.infoReceived3 = this.rservice.getinfo3();
   }
+  updateInfo(form: any) {
+    this.rservice.addInfo(form);
+  }
+  
   constructor(private rservice: RecordsService) {}
 }
