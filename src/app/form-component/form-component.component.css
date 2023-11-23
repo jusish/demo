@@ -1,12 +1,21 @@
 div {
- text-align: center;
+  text-align: center;
 }
-
 
 label {
   text-align: left;
 }
 
-p{
+p {
   text-align: center;
+}
+
+.alert {
+  color: white;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.alert-danger {
+  background-color: red;
 }

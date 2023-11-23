@@ -1,20 +1,27 @@
+
+<form #form = "ngForm">
+  <input type="text" name="location" id="location" ngModel>
+  <button type="button">Add Info</button>
+</form>
+
+
 <button type="button" name="button" (click)="getInfoFromServiceClass1()">
   Employee 1
 </button>
 <ul class="list-group">
-  <li *ngFor="let info of infoReceived1" class="list-group-item">{{ info }}</li>
+  <li *ngFor="let info of infoReceived1" class="list-group-info">{{ info }}</li>
 </ul>
 <pre></pre>
 <button type="button" name="button" (click)="getInfoFromServiceClass2()">
   Employee 2
 </button>
 <ul class="list-group">
-  <li *ngFor="let info of infoReceived2" class="list-group-item">{{ info }}</li>
+  <li *ngFor="let info of infoReceived2" class="list-group-info">{{ info }}</li>
 </ul>
 <pre></pre>
 <button type="button" name="button" (click)="getInfoFromServiceClass3()">
   Employee 3
 </button>
 <ul class="list-group">
-  <li *ngFor="let info of infoReceived3" class="list-group-item">{{ info }}</li>
+  <li *ngFor="let info of infoReceived3" class="list-group-info">{{ info }}</li>
 </ul>

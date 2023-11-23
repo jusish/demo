@@ -2,7 +2,7 @@
 
 <div class="container">
   <h1>User registration</h1>
-  <form class="form-group" #login = "ngForm" (ngSubmit)="submit(login)">
+  <form class="form-group" #login="ngForm" (ngSubmit)="submit(login)">
     <div>
       <label for="firstname">First Name</label>
       <input
@@ -15,9 +15,11 @@
         required
         minlength="2"
         maxlength="10"
-        #name = "ngModel"
+        #name="ngModel"
       />
-      <div *ngIf=" name.touched && name.invalid" class="alert alert"></div>
+      <div *ngIf="name.touched && name.invalid" class="alert alert-danger">
+        <p *ngIf="name.hasError">You have error</p>
+      </div>
     </div>
     <pre></pre>
 
