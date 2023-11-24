@@ -1,6 +1,8 @@
-<form #form="ngForm" #login = "ngForm" (ngSubmit)="updateInfo(form)">
-  <input type="text" name="location" id="location" ngModel />
-  <button type="button" name="button">Add Info</button>
+<form #form="ngForm" (ngSubmit)="updateInfo(form)">
+  <div>
+    <input type="text" name="location" id="location" ngModel />
+    <button type="button" name="button">Add Info</button>
+  </div>
 </form>
 
 <button type="button" name="button" (click)="getInfoFromServiceClass1()">
